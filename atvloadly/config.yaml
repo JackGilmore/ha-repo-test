@@ -6,14 +6,12 @@ description: Apple TV sideloading server
 arch:
   - aarch64
   - amd64
-  - armv7
-  - armhf
 
 startup: services
 boot: auto
 init: false
 
-image: bitxeno/atvloadly:latest
+image: bitxeno/atvloadly
 
 ports:
   80/tcp: 5533
