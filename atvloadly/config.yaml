@@ -22,5 +22,6 @@ map:
   - data:rw
 
 host_dbus: true
+host_network: true
 
 apparmor: false
