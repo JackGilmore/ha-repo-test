@@ -1,0 +1,26 @@
+name: Atvloadly
+version: "1.0.0"
+slug: atvloadly
+description: Apple TV sideloading server
+
+arch:
+  - aarch64
+  - amd64
+  - armv7
+  - armhf
+
+startup: services
+boot: auto
+init: false
+
+image: bitxeno/atvloadly:latest
+
+ports:
+  80/tcp: 5533
+
+map:
+  - data:rw
+
+host_dbus: true
+
+apparmor: false
