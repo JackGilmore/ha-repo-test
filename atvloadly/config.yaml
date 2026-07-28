@@ -1,5 +1,5 @@
 name: Atvloadly
-version: "1.0.0"
+version: "v0.4.6"
 slug: atvloadly
 description: Apple TV sideloading server
 
@@ -11,7 +11,7 @@ startup: services
 boot: auto
 init: false
 
-image: bitxeno/atvloadly
+image: ghcr.io/bitxeno/atvloadly
 
 ports:
   80/tcp: 5533
