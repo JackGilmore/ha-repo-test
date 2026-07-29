@@ -20,14 +20,6 @@ ports:
 map:
   - addon_config:rw
 
-options:
-  tz: Europe/London
-  admin_pin: "1111"
-
-schema:
-  tz: str
-  admin_pin: password
-
 environment:
   TZ: "{options.tz}"
-  ADMIN_PIN: "{options.admin_pin}"
+  ADMIN_PIN: "1111"
