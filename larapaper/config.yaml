@@ -35,4 +35,4 @@ environment:
   TRMNL_PROXY_REFRESH_MINUTES: "{options.refresh_minutes}"
   DB_DATABASE: "database/storage/database.sqlite"
   APP_URL: "{options.app_url}"
-  APP_KEY: "{options.app_key}"
+  APP_KEY: "base64:zzPXBQPlgn0NHwVBTVG0B//8P/PVwVnBp2gk0ZWR0+k="
