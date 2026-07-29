@@ -1,0 +1,38 @@
+name: TRMNL Larapaper
+version: "0.39.0"
+slug: larapaper
+description: Larapaper TRMNL dashboard application
+url: https://github.com/usetrmnl/larapaper
+
+arch:
+  - aarch64
+  - amd64
+
+startup: services
+boot: auto
+init: false
+
+image: ghcr.io/usetrmnl/larapaper
+
+ports:
+  8080/tcp: 4567
+
+map:
+  - addon_config:rw
+
+options:
+  app_url: ""
+  app_key: ""
+  refresh_minutes: 15
+
+schema:
+  app_url: str?
+  app_key: password?
+  refresh_minutes: int
+
+environment:
+  PHP_OPCACHE_ENABLE: "1"
+  TRMNL_PROXY_REFRESH_MINUTES: "{options.refresh_minutes}"
+  DB_DATABASE: "database/storage/database.sqlite"
+  APP_URL: "{options.app_url}"
+  APP_KEY: "{options.app_key}"x
