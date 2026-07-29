@@ -1,6 +1,7 @@
 name: Inker
 version: "0.5.0"
 slug: inker
+description: TRMNL self host implementation
 url: https://github.com/wojooo/inker
 
 arch:
